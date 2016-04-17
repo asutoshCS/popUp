@@ -1,7 +1,7 @@
 <!DOCTYPE html/> 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="popup.css">
-<script src="citation.js"></script>
+<script src="/Citation.js-master/citation.js"></script>
 
 <html style="height: 400px; width: 350px; background-color: #56042a">
 
@@ -15,7 +15,21 @@
   				<input type="radio" name="citationType" value="APA"> APA<br>
 			<p style="font-size: 16px">
 				Link URL: 
-				<input type="text" name="Link URL"></input>
+				<input type="text" name="URL" id="url"></input><br>
+				Title:
+				<input type="text" name="title" id="title"></input><br>
+				Author Name:
+				<input type="text" name="AuthorName" id="authName"></input><br>
+				Date Accessed:
+				<input type="text" name="dateAccessed" id="date"></input><br>
+
+			</p>
+
+			<p> 
+
+				<div><script>popUp.write(MLA())</script></div>
+
+
 			</p>
 
 				

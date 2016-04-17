@@ -2,6 +2,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="popup.css">
 <script src="/Citation.js-master/citation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <html style="height: 400px; width: 350px; background-color: #56042a">
 
@@ -15,23 +16,26 @@
   				<input type="radio" name="citationType" value="APA"> APA<br>
 			<p style="font-size: 16px">
 				Link URL: 
-				<input type="text" name="URL" id="url"></input><br>
+				<input type="text" id="url"></input><br>
 				Title:
-				<input type="text" name="title" id="title"></input><br>
+				<input type="text" id="title"></input><br>
 				Author Name:
-				<input type="text" name="AuthorName" id="authName"></input><br>
+				<input type="text" id="authName"></input><br>
 				Date Accessed:
-				<input type="text" name="dateAccessed" id="date"></input><br>
+				<input type="text" id="date"></input><br>
 
 			</p>
+			</form>
  
 
 				<div>
 
-					popUp.body.appendChild(popUp.createTextNode(MLA()));				
+						document.write(MLA(message));
+
+
 				</div>
 
 				
-			</form>
+			
 			
 </html>

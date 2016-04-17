@@ -13,6 +13,4 @@
 
   },
 
-  "permissions": [
-  "unlimitedStorage"
-  ]
+  "permissions": ["unlimitedStorage"]

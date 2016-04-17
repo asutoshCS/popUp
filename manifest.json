@@ -13,6 +13,6 @@
 
   },
 
-  "permissions": ["website"]
+  "permissions": ["downloads"]
 
 }

@@ -1,4 +1,13 @@
-
+document.addEventListener("DOMContentLoaded",function (){
+    //Fetch all contents
+    chrome.storage.local.get(null,function (obj){
+        console.log(JSON.stringify(obj));
+    });
+    //Set some content from browser action
+    chrome.storage.local.set({"anotherIdentifier":"Another awesome Content"},function (){
+        console.log("Storage Succesful");
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('button').addEventListener('click', myFunction);      

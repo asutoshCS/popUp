@@ -16,3 +16,8 @@ form {
 	font-size: 16px; 
 	color: white; 
 }
+
+#textBoxId {
+	font-size: 14pt; 
+	height: 400px; 
+}

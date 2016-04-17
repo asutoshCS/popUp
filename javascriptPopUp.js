@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('button').addEventListener('click', myFunction);      
 });
 
+document.getElementById('textboxid').style.height="200px";
+document.getElementById('textboxid').style.fontSize="14pt";
+
 function myFunction() {
     var aut= document.getElementById("author").value;
     var url= document.getElementById("url").value;

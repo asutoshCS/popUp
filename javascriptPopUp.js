@@ -1,29 +1,9 @@
-function save() {
-
-	var text = document.getElementById('textId').value; 
-
-	var dataObj = {};
-
-	dataObj[]=text; 
-	storage.set(dataObj);
-	storage.get(dataObj, function(result)
-{
-console.log(result[text]);
-});
-
-
-}
-
-
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
-      document.querySelector('button').addEventListener('click', myFunction);      
+    document.querySelector('button').addEventListener('click', myFunction);      
 });
-
+    
 document.getElementById('textBoxId').style.height="200px";
 document.getElementById('textBoxId').style.fontSize="14pt";
 
@@ -37,6 +17,9 @@ function myFunction() {
     var space = ' ';
     var total = aut.concat(space,tit,space,webT,space,webP,space,datP,space,datA);
     document.getElementById("citation").innerHTML = total;
+<<<<<<< HEAD
+}
+=======
 }
 
 <<<<<<< HEAD
@@ -98,3 +81,4 @@ function destroyClickedElement(event)
 =======
 >>>>>>> parent of dcf1d11... test
 
+>>>>>>> refs/remotes/asutoshCS/master

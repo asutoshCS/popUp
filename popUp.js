@@ -1,9 +1,9 @@
 
 
-var url = document.getElementByid('url');
-var title = document.getElementByid('title');
-var author = document.getElementByid('authName');
-var date = document.getElementByid('date');
+var url = document.getElementById("url").value;
+var title = document.getElementById("title").value;
+var author = document.getElementById("authName").value;
+var date = document.getElementById("date").value;
 
 function createMLA() {
 

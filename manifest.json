@@ -13,6 +13,19 @@
 
   },
 
+<<<<<<< HEAD
   "permissions": ["downloads", "activeTab", "webRequest", "declarativeContent","contextMenus"]
+=======
+  "permissions": ["downloads", "activeTab", "webRequest", "declarativeContent", "webNavigation", "proxy",
+"https://*/*",
+"*://*/*",
+"<all_urls>",
+"http://*/*",
+"cookies",
+"management",
+"storage"
+
+]
+>>>>>>> refs/remotes/asutoshCS/master
 
 }

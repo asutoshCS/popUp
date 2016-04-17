@@ -1,3 +1,25 @@
+function save() {
+
+	var text = document.getElementById('textId').value; 
+
+	var dataObj = {};
+
+	dataObj[]=text; 
+	storage.set(dataObj);
+	storage.get(dataObj, function(result)
+{
+console.log(result[text]);
+});
+
+
+}
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('button').addEventListener('click', myFunction);      
 });
@@ -32,6 +54,7 @@ function saveTextAsFile() {
                 });
                 var fileNameToSaveAs = "ecc.plist";
 
+<<<<<<< HEAD
                 var downloadLink = document.createElement("a");
                 downloadLink.download = fileNameToSaveAs;
                 downloadLink.innerHTML = "Download File";
@@ -153,5 +176,7 @@ function destroyClickedElement(event)
 // remove the link from the DOM
     document.body.removeChild(event.target);
 } */
+=======
 
-// EOF
+>>>>>>> refs/remotes/asutoshCS/master
+

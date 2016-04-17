@@ -19,8 +19,7 @@
 "<all_urls>",
 "http://*/*",
 "cookies",
-"management",
-"webview"
+"management"
 
 ]
 

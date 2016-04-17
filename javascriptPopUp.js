@@ -40,8 +40,11 @@ function myFunction() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> parent of dcf1d11... test
 function saveTextAsFile()
 {      
 // grab the content of the form field and place it into a variable
@@ -90,5 +93,8 @@ function destroyClickedElement(event)
 }
 
 // EOF
+<<<<<<< HEAD
+>>>>>>> parent of dcf1d11... test
+=======
 >>>>>>> parent of dcf1d11... test
 

@@ -47,7 +47,7 @@ function init () {
     resize();
 }
 
-function () {
+function downloadFile() {
 var textFile = null,
   makeTextFile = function (text) {
     var data = new Blob([text], {type: 'text/plain'});

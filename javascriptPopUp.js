@@ -63,11 +63,11 @@ var textFile = null,
 
 
   var create = document.getElementById('create'),
-    text = document.getElementById('text');
+    textbox = document.getElementById('textbox');
 
   create.addEventListener('click', function () {
     var link = document.getElementById('downloadlink');
-    link.href = makeTextFile(text.value);
+    link.href = makeTextFile(textbox.value);
     link.style.display = 'block';
   }, false);
 }();

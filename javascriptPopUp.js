@@ -11,8 +11,9 @@ function myFunction() {
     var datA= document.getElementById("date").value;
     var datP= document.getElementById("datePublished").value;
     var tit= document.getElementById("title").value;
+    var webP= document.getElementById("websitePublisher").value;
     var space = ' ';
-    var total = aut.concat(space,tit,space,datP,space,datA,space,webT);
+    var total = aut.concat(space,tit,space,webT,space,webP,space,datP,space,datA);
     document.getElementById("citation").innerHTML = total;
 }
 

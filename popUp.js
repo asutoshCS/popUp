@@ -1,12 +1,13 @@
 
-var url = popup.getElementByid('url');
-var title = popup.getElementByid('title');
-var author = popup.getElementByid('authName');
-var date = popup.getElementByid('date');
+
+var url = document.getElementByid('url');
+var title = document.getElementByid('title');
+var author = document.getElementByid('authName');
+var date = document.getElementByid('date');
 
 function MLA() {
 
-	var message = 'url'; 
+	var message = 'url' + 'title' + 'authName' + 'date';
 
 	return message; 
 

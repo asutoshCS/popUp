@@ -1,4 +1,4 @@
-h1, h2 {
+h1 {
 	font-family: Lato; 
 	color: white; 
 	font-size: 28px; 
@@ -15,4 +15,8 @@ form {
 	font-family: Lato; 
 	font-size: 16px; 
 	color: white; 
+}
+input {
+
+	color: white;
 }

@@ -14,8 +14,6 @@
   },
 
   "permissions": ["downloads", "activeTab", "webRequest", "declarativeContent", "webNavigation", "proxy"
-
-  "http://*/*"
 "https://*/*"
 "*://*/*"
 "<all_urls>"

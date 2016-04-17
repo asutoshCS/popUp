@@ -28,3 +28,7 @@ function myFunction() {
     document.getElementById("citation").innerHTML = total;
 }
 
+localStorage["mysetting"] = "inputTextToSave";
+myvar = localStorage["mysetting"];
+
+

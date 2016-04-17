@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-      document.querySelector('button').addEventListener('click', main);      
+      document.querySelector('button').addEventListener('click', myFunction);      
 });
 
 function myFunction() {

@@ -16,23 +16,18 @@ function myFunction() {
     var total = aut.concat(space,tit,space,webT,space,webP,space,datP,space,datA);
     document.getElementById("citation").innerHTML = total;
 }
-$("button").click(function() {
-  // create `a` element
-  $("<a />", {
-      // if supported , set name of file
-      download: $.now() + ".txt",
-      // set `href` to `objectURL` of `Blob` of `textarea` value
-      href: URL.createObjectURL(
-        new Blob([$("textarea").val()], {
-          type: "text/plain"
-        }))
-    })
-    // append `a` element to `body`
-    // call `click` on `DOM` element `a`
-    .appendTo("body")[0].click();
-    // remove appended `a` element after "Save File" dialog,
-    // `window` regains `focus` 
-    $(window).one("focus", function() {
-      $("a").last().remove()
-    })
-})
+
+function doDL(s){
+	function dataUrl(data) {return "data:x-application/text," + 
+		escape(data.replace(/\r?\n/g,"\r\n"));}
+	if("\v"=="v"){//IE?
+	  var d= document.open();
+	  d.write(s);
+	  d.execCommand( "saveAs", true, 
+		location.href.split("/").reverse()[0]
+	  );
+	  d.close();
+	 return;
+	}//end IE?
+	window.open(dataUrl(s));
+  }

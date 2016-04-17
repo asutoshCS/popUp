@@ -2,6 +2,6 @@
 
 function createMLA() {
 
-	document.write(document.getElementById("url").value + "</br>"); 
+	document.write(document.getElementById('url').value + "</br>"); 
 
 }

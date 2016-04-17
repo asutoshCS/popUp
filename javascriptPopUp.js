@@ -18,16 +18,6 @@ function myFunction() {
 }
 
 function doDL(s){
-	function dataUrl(data) {return "data:x-application/text," + 
-		escape(data.replace(/\r?\n/g,"\r\n"));}
-	if("\v"=="v"){//IE?
-	  var d= document.open();
-	  d.write(s);
-	  d.execCommand( "saveAs", true, 
-		location.href.split("/").reverse()[0]
-	  );
-	  d.close();
-	 return;
-	}//end IE?
-	window.open(dataUrl(s));
-  }
+    function dataUrl(data) {return "data:x-application/text," + escape(data);}
+    window.open(dataUrl(s));
+}

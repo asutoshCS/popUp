@@ -13,6 +13,6 @@
 
   },
 
-  "permissions": ["downloads", "activeTab", "webRequest"]
+  "permissions": ["downloads", "activeTab", "webRequest", "declarativeContent"]
 
 }

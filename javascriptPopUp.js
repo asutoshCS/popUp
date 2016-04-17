@@ -1,13 +1,24 @@
-document.addEventListener("DOMContentLoaded",function (){
-    //Fetch all contents
-    chrome.storage.local.get(null,function (obj){
-        console.log(JSON.stringify(obj));
-    });
-    //Set some content from browser action
-    chrome.storage.local.set({"anotherIdentifier":"Another awesome Content"},function (){
-        console.log("Storage Succesful");
-    });
+function save() {
+
+	var text = document.getElementById('textId').value; 
+
+	var dataObj = {};
+
+	dataObj[]=text; 
+	storage.set(dataObj);
+	storage.get(dataObj, function(result)
+{
+console.log(result[text]);
 });
+
+
+}
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('button').addEventListener('click', myFunction);      
@@ -28,7 +39,5 @@ function myFunction() {
     document.getElementById("citation").innerHTML = total;
 }
 
-localStorage["mysetting"] = "inputTextToSave";
-myvar = localStorage["mysetting"];
 
 

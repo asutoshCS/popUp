@@ -47,27 +47,3 @@ function init () {
     resize();
 }
 
-function downloadFile() {
-var textFile = null,
-  makeTextFile = function (text) {
-    var data = new Blob([text], {type: 'text/plain'});
-
-    if (textFile !== null) {
-      window.URL.revokeObjectURL(textFile);
-    }
-
-    textFile = window.URL.createObjectURL(data);
-
-    return textFile;
-  };
-
-
-  var create = document.getElementById('create'),
-    textbox = document.getElementById('textbox');
-
-  create.addEventListener('click', function () {
-    var link = document.getElementById('downloadlink');
-    link.href = makeTextFile(textbox.value);
-    link.style.display = 'block';
-  }, false);
-}();

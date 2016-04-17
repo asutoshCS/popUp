@@ -8,15 +8,11 @@ h1 {
 p {
 	font-family: Lato;
 	color: white; 
-	font-size: 24px; 
+	font-size: 20px; 
 }
 form {
 
 	font-family: Lato; 
 	font-size: 16px; 
 	color: white; 
-}
-input {
-
-	color: white;
 }

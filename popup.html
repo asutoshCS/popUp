@@ -1,50 +1,59 @@
 <!DOCTYPE html/> 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="popup.css">
-	<script src="javascriptPopUp.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="javascriptPopUp.js"></script>
 
 
-<html style="height: 450px; width: 450px; background-color: #56042a">
+<html style="height: 450px; width: 450px; background-color: #67BCDB">
+<body>
 
 
 	<title>Welcome to Mark Up!</title>
-
-
 	<center><h1>Mark Up</h1></center>
-
-	<h2 style="color: white">MLA Citation</h2>
-	<body>
-
-
-</body>
-
-
-
+	<h2 style="color: black">MLA Citation</h2>
 <p>
-
-		Author: <input type="text" id="author"><br>
-		URL: <input type="text" id="url" ><br>
-		Date: <input type="text" id="date" ><br>
-		Title: <input type="text" id="title" ><br>
-		<br> 
-
+<table>
+	<tr>
+		<td>Author:</td>
+		<td><input type="text" id="author"><br></td>
+	</tr>
+	<tr>
+		<td>Website Title:</td>
+		<td><input type="text" id="websiteTitle" ><br></td>
+	</tr>
+	<tr>
+		<td>Date Accessed:</td>
+		<td><input type="text" id="date" ><br></td>
+	</tr>
+	<tr>
+		<td>Title:</td>
+		<td><input type="text" id="title" ><br></td>
+	</tr>
+	<tr>
+		<td>Date Published:</td>
+		<td><input type="text" id="datePublished"></td>
+	</tr>
+	<tr>
+		<td>Website Publisher:</td>
+		<td><input type="text" id="websitePublisher"></td>
+	</tr>
+</table>
+<br>
 <button style="font-family: Lato" onclick="myFunction()">Create MLA Citation</button>
+<p id="citation"></p>
 </p>
 
-	<p id="citation"></p>
 
+<h2 style="color: black">Notes</h2>
 
-<h2 style="color: white">Notes</h2>
-
-<textarea id="textbox">Type something here</textarea> <button id="create" onclick="downloadFile()">Create file</button> <a download="info.txt" id="downloadlink" style="display: none">Download</a>
-
-
-
+<textarea id="inputTextToSave"></textarea>
+<br>
+<br>
+<button onclick="saveTextAsFile()">Save Text to File</button>
 		
+</body>
 
-
-
- 
 			
 			
 </html>

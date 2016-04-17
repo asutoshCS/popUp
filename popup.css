@@ -1,27 +1,37 @@
+button {
+	 -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: Georgia;
+  color: black;
+  font-size: 11px;
+  background: #67BCDB;
+  padding: 5px 18px 8px 18px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+
+
+}
+
+
+
 h1 {
 	font-family: Lato; 
-	color: white; 
+	color: black; 
 	font-size: 28px; 
 
 	
 }
 p {
 	font-family: Lato;
-	color: white; 
+	color: black; 
 	font-size: 16px; 
 }
 form {
 
 	font-family: Lato; 
 	font-size: 16px; 
-	color: white; 
+	color: black; 
 }
 
-textarea {
-    border: 0 none white;
-    overflow: hidden;
-    padding: 0;
-    outline: none;
-    background-color: #D0D0D0;
-    resize: none;
-}
+

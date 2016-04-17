@@ -1,26 +1,26 @@
 body {
 
-	background-color: #DFE2DB;
+	background-color: #FDF3E7;
 
 }
 
 h1 {
 	font-family: Lato; 
-	color: white; 
+	color: black; 
 	font-size: 28px; 
 
 	
 }
 p {
 	font-family: Lato;
-	color: white; 
+	color: black; 
 	font-size: 16px; 
 }
 form {
 
 	font-family: Lato; 
 	font-size: 16px; 
-	color: white; 
+	color: black; 
 }
 
 

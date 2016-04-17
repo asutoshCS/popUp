@@ -15,34 +15,20 @@ function myFunction() {
     document.getElementById("citation").innerHTML = total;
 }
 
-var observe;
-if (window.attachEvent) {
-    observe = function (element, event, handler) {
-        element.attachEvent('on'+event, handler);
-    };
-}
-else {
-    observe = function (element, event, handler) {
-        element.addEventListener(event, handler, false);
-    };
-}
-function init () {
-    var text = document.getElementById('text');
-    function resize () {
-        text.style.height = 'auto';
-        text.style.height = text.scrollHeight+'px';
-    }
-    /* 0-timeout to get the already changed text */
-    function delayedResize () {
-        window.setTimeout(resize, 0);
-    }
-    observe(text, 'change',  resize);
-    observe(text, 'cut',     delayedResize);
-    observe(text, 'paste',   delayedResize);
-    observe(text, 'drop',    delayedResize);
-    observe(text, 'keydown', delayedResize);
+(function () {
+var textFile = null,
+  makeTextFile = function (text) {
+    var data = new Blob([text], {type: 'text/plain'});
 
-    text.focus();
-    text.select();
-    resize();
-}
+    // If we are replacing a previously generated file we need to
+    // manually revoke the object URL to avoid memory leaks.
+    if (textFile !== null) {
+      window.URL.revokeObjectURL(textFile);
+    }
+
+    textFile = window.URL.createObjectURL(data);
+
+    return textFile;
+  };
+
+

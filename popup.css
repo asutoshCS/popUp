@@ -1,6 +1,21 @@
 button {
-	color: #83b0cf;
-	
+	 background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #fcf9fc);
+  background-image: -moz-linear-gradient(top, #3498db, #fcf9fc);
+  background-image: -ms-linear-gradient(top, #3498db, #fcf9fc);
+  background-image: -o-linear-gradient(top, #3498db, #fcf9fc);
+  background-image: linear-gradient(to bottom, #3498db, #fcf9fc);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 7px 20px 10px 20px;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+
+
 
 }
 

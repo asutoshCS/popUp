@@ -11,7 +11,7 @@
 	<center><h1>Mark Up</h1></center>
 
 			<p>Select citation style:</p>
-			<form>
+			<form action="popUp.js">
 				<input type="radio" name="citationType" value="MLA" checked> MLA<br>
   				<input type="radio" name="citationType" value="APA"> APA<br>
 			<p style="font-size: 16px">
@@ -28,21 +28,8 @@
 			</form>
  
 				<script>
-				var url = document.getElementById("url").value;
-var title = document.getElementById("title").value;
-var author = document.getElementById("authName").value;
-var date = document.getElementById("date").value;
-
-function createMLA() {
-
-	var message = 'url' + 'title' + 'authName' + 'date';
-
-	return message; 
-
-}
-
 					
-					document.write("hello");
+					document.write(createMLA())
 				</script>
 
 				

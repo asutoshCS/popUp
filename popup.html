@@ -1,23 +1,13 @@
 <!DOCTYPE html/> 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="popup.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="javascriptPopUp.js"></script>
+
 
 <html style="height: 400px; width: 350px; background-color: #56042a">
 
 
 	<title>Welcome to Mark Up!</title>
-
-	<!--<script type="text/javascript">
-		
-	function checkMLA(id) {
-
-		alert(id); 
-	}
-
-
-
-	</script>-->
 
 
 	<center><h1>Mark Up</h1></center>
@@ -25,60 +15,21 @@
 	<h2>MLA Citation</h2>
 	<body>
 
+
+</body>
+
 		Author: <input type="text" id="author"><br>
 		URL: <input type="text" id="url" ><br>
 		Date: <input type="text" id="date" ><br>
 		Title: <input type="text" id="title" ><br>
-<!--Field2: <input type="text" id="field2"><br><br>-->
 
-<button onclick="myFunction()">Copy Text</button>
+<button onclick="myFunction()">Click ME!</button>
 
-<p>A function is triggered when the button is clicked. The function copies the text from Field1 into Field2.</p>
+
+
 
 <p id="citation"></p>
-
-<script>
-function myFunction() {
-    var aut= document.getElementById("author").value;
-    var url= document.getElementById("url").value;
-    var dat= document.getElementById("date").value;
-    var tit= document.getElementById("title").value;
-    var space = ' ';
-    var total = aut.concat(space,url,space,dat,space,tit);
-    document.getElementById("citation").innerHTML = total;
-
-}
-</script>
-
-<!--</body>
-
-	<div>
-	<p>
-		<form>
-			Link URL: 
-			<input type="text" name="link" id="url"/><br>
-			Title:
-			<input type="text" name="title" id="titleName"/><br>
-			Author: 
-			<input type="text" name="author" id="authName"/><br> 
-			Date: 
-			<input type="text" name="dateAccessed" id="date"/><br> 
-			<input type="submit" value="Create Citation" onclick="createMLA(this.id)"></input>
-
-		</form>
-
-		</p>
-
-	</div>
-
-	<div id="output">
-		
-
-
-	</div>-->
-
-
-			
+ 
 			
 			
 </html>

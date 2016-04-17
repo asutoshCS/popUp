@@ -7,11 +7,12 @@ document.getElementById('textBoxId').style.fontSize="14pt";
 
 function myFunction() {
     var aut= document.getElementById("author").value;
-    var url= document.getElementById("websiteTitle").value;
-    var dat= document.getElementById("date").value;
+    var webT= document.getElementById("websiteTitle").value;
+    var datA= document.getElementById("date").value;
+    var datP= document.getElementById("datePublished").value;
     var tit= document.getElementById("title").value;
     var space = ' ';
-    var total = aut.concat(space,tit,space,dat,space,url);
+    var total = aut.concat(space,tit,space,datP,space,datA,space,webT);
     document.getElementById("citation").innerHTML = total;
 }
 

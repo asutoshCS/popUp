@@ -8,7 +8,7 @@
 
 	<title>Welcome to Mark Up!</title>
 
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 		
 	function checkMLA(id) {
 
@@ -17,12 +17,35 @@
 
 
 
-	</script>
+	</script>-->
 
 
 	<center><h1>Mark Up</h1></center>
 
 	<h2>MLA Citation</h2>
+	<body>
+
+		Author: <input type="text" id="author"><br>
+		URL: <input type="text" id="url" ><br>
+		Date: <input type="text" id="date" ><br>
+		Title: <input type="text" id="title" ><br>
+<!--Field2: <input type="text" id="field2"><br><br>-->
+
+<button onclick="myFunction()">Copy Text</button>
+
+<p>A function is triggered when the button is clicked. The function copies the text from Field1 into Field2.</p>
+
+<script>
+function myFunction() {
+    var aut= document.getElementById("author").value;
+    var url= document.getElementById("url").value;
+    var dat= document.getElementById("date").value;
+    var tit= document.getElementById("title").value;
+    alert(aut+' '+url+' '+dat+' '+tit);
+}
+</script>
+
+<!--</body>
 
 	<div>
 	<p>
@@ -47,7 +70,7 @@
 		
 
 
-	</div>
+	</div>-->
 
 
 			

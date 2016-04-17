@@ -1,3 +1,9 @@
+body {
+
+	background-color: #DFE2DB;
+
+}
+
 h1 {
 	font-family: Lato; 
 	color: white; 
@@ -17,11 +23,4 @@ form {
 	color: white; 
 }
 
-textarea {
-    border: 0 none white;
-    overflow: hidden;
-    padding: 0;
-    outline: none;
-    background-color: #D0D0D0;
-    resize: none;
-}
+

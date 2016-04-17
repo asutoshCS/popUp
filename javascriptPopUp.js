@@ -1,3 +1,15 @@
+var link = document.getElementById("link");
+link.addEventListener("click", function(){
+  chrome.tabs.getSelected({}, function(tab) {
+    chrome.tabs.update(tab.id, {url: 'http://google.com'});
+  });
+}, false);
+
+chrome.tabs.getSelected({}, function(tab) {
+  chrome.tabs.update(tab.id, {url: 'http://google.com'});
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('button').addEventListener('click', myFunction);      
 });

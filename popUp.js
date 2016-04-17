@@ -5,7 +5,7 @@ var title = document.getElementByid('title');
 var author = document.getElementByid('authName');
 var date = document.getElementByid('date');
 
-function MLA() {
+function createMLA() {
 
 	var message = 'url' + 'title' + 'authName' + 'date';
 
